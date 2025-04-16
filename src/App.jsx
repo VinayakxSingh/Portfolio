@@ -60,9 +60,7 @@ function App() {
         onClick={() =>
           projectsRef.current?.scrollIntoView({ behavior: "smooth" })
         }
-      >
-        Test Scroll to Projects
-      </button>
+      ></button>
       <Navbar
         scrollToEducation={() =>
           educationRef.current?.scrollIntoView({ behavior: "smooth" })
