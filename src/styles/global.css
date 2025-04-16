@@ -1,0 +1,53 @@
+body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff99;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00cc66;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.highlight-animated {
+  font-weight: bold;
+  color: #00ff99;
+  text-shadow: 0 0 3px #00ff99, 0 0 5px #00ff99;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 3px #00ff99, 0 0 5px #00ff99;
+  }
+  100% {
+    text-shadow: 0 0 10px #00ff99, 0 0 15px #00ff99;
+  }
+}

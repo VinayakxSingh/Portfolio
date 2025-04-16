@@ -1,0 +1,51 @@
+.about-me {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  color: #e0e0e0;
+  max-width: 600px;
+  text-align: left;
+}
+
+.intro {
+  font-size: 1.2rem;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights li {
+  font-size: 1rem;
+  color: #ccc;
+  padding: 5px;
+}
+.spanned {
+  font-weight: bold;
+  color: white;
+}
