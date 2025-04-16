@@ -13,13 +13,35 @@ Hi, I'm Vinayak Singh — a full-stack web developer with a knack for building w
 ## 💼 Projects
 
 Explore some of my notable projects:
+Todoist:
 
-- **Todoist**: A productivity app to manage your tasks efficiently.
-- **Cruising350**: Instagram-inspired site dedicated to Royal Enfield Classic 350 riders.
-- **HIX Cosmetics**: A sleek e-commerce platform for cosmetic products with animations and effects.
-- **NeighbourGov**: A civic engagement portal to submit and vote on local issues.
-- **MovieHub**: Movie Hub app using OMDb API, allowing discovery, search, and watchlist features.
+GitHub: https://github.com/VinayakxSingh/Todoist
 
+Live Demo: https://bright-cendol-1e0307.netlify.app/
+
+Cruising350:
+
+GitHub: https://github.com/VinayakxSingh/Cruising350
+
+Live Demo: https://cruising350.netlify.app/
+
+HIX Cosmetics:
+
+GitHub: https://github.com/VinayakxSingh/HIX
+
+Live Demo: https://hix-cosmetics.netlify.app/
+
+NeighbourGov:
+
+GitHub: https://github.com/VinayakxSingh/NeighbourGov
+
+Live Demo: https://neighbour-gov.vercel.app/
+
+MovieHub:
+
+GitHub: https://github.com/VinayakxSingh/MOVIEHUB
+
+Live Demo: https://moviehub-delta-seven.vercel.app/
 Each project includes links to the GitHub repository and live demos.
 
 ---
