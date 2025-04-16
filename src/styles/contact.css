@@ -1,128 +1,257 @@
 .contact-section {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: var(--background-dark);
   padding: 80px 20px;
-  text-align: center;
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.direct-mail-container {
-  margin-top: 30px;
-  text-align: center;
+  position: relative;
 }
 
-.or-text {
-  color: #888;
-  margin: 15px 0;
-  font-size: 1rem;
-  font-style: italic;
+.contact-section .section-header {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.mail-me-btn {
-  display: inline-block;
-  background-color: transparent;
-  color: #00ff99;
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background-color: rgba(30, 30, 30, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-info h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contact-info > p {
+  color: var(--text-light);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 255, 153, 0.1);
+  color: var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h4 {
   font-size: 1.1rem;
-  font-weight: bold;
-  border: 2px solid #00ff99;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  margin-bottom: 5px;
+  color: var(--text-white);
 }
 
-.mail-me-btn:hover {
-  background-color: #00ff99;
-  color: #121212;
-  transform: scale(1.05);
+.contact-text p,
+.contact-text a {
+  color: var(--text-light);
+  line-height: 1.5;
+  font-size: 0.95rem;
+  word-break: break-word;
 }
 
-.contact-title {
-  color: #00ff99;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-weight: bold;
+.contact-text a:hover {
+  color: var(--primary-color);
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 20px;
+  background-color: rgba(30, 30, 30, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-soft);
+}
+
+.form-message {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.form-message.success {
+  background-color: rgba(0, 255, 153, 0.1);
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+.form-message.error {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  border-left: 3px solid #ff6b6b;
 }
 
 .form-group {
   margin-bottom: 20px;
-  width: 100%;
 }
 
 .form-group label {
   display: block;
-  color: #ccc;
-  font-size: 1.1rem;
+  color: var(--text-light);
   margin-bottom: 8px;
+  font-size: 1rem;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-white);
   font-size: 1rem;
-  color: #121212;
-  background-color: #2a2a2a;
-  border: 1px solid #333;
-  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #00ff99;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 153, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .submit-btn {
-  background-color: #00ff99;
-  color: #121212;
-  font-size: 1.25rem;
-  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--background-dark);
   border: none;
-  border-radius: 50px;
-  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .submit-btn:hover {
-  background-color: #00cc7a;
-  transform: scale(1.05);
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 153, 0.2);
 }
 
-@media (max-width: 768px) {
-  .contact-form {
-    width: 90%;
-    padding: 15px;
+.direct-mail-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.or-text {
+  color: var(--text-light);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.or-text::before,
+.or-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.or-text::before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.or-text::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.mail-me-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mail-me-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .contact-title {
-    font-size: 1.8rem;
+  .contact-info,
+  .contact-form-container {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 15px;
   }
 
-  .form-group label {
-    font-size: 1rem;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.9rem;
+  .contact-info h3 {
+    font-size: 1.5rem;
   }
 
   .submit-btn {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .or-text::before,
+  .or-text::after {
+    width: 30px;
   }
 }

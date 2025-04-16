@@ -9,10 +9,10 @@ import "./styles/responsive.css";
 import AboutMe from "./components/aboutme";
 import MySkills from "./components/myskills";
 import Contact from "./components/contact";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [activeSection, setActiveSection] = useState("about");
-  console.log(activeSection);
 
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -40,7 +40,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     sectionRefs.forEach(({ ref }) => {
@@ -55,28 +55,67 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <button
-        onClick={() =>
-          projectsRef.current?.scrollIntoView({ behavior: "smooth" })
-        }
-      ></button>
-      <Navbar
-        scrollToEducation={() =>
-          educationRef.current?.scrollIntoView({ behavior: "smooth" })
-        }
-        scrollToProjects={() =>
-          projectsRef.current?.scrollIntoView({ behavior: "smooth" })
-        }
-      />
-      <Hero />
-      <AboutMe ref={aboutRef} />
-      <Projects ref={projectsRef} />
-      <MySkills ref={skillsRef} />
-      <Education ref={educationRef} />
-      <Contact ref={contactRef} />
-      <Footer />
-    </div>
+    <AnimatePresence>
+      <div className="app-container">
+        <Navbar
+          activeSection={activeSection}
+          scrollToEducation={() =>
+            educationRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToProjects={() =>
+            projectsRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Hero />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <AboutMe ref={aboutRef} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <Projects ref={projectsRef} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <MySkills ref={skillsRef} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <Education ref={educationRef} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <Contact ref={contactRef} />
+          </motion.div>
+          <Footer />
+        </motion.div>
+      </div>
+    </AnimatePresence>
   );
 }
 
