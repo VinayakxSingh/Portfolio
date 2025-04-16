@@ -15,12 +15,8 @@ const AboutMe = () => {
             passionate developer crafting meaningful digital experiences.
           </p>
           <p>
-            I love building web applications that combine functionality with
-            great user experience. Currently, I’m enhancing my skills at Masai
-            School, and working on exciting projects in{" "}
-            <span className="spanned">React</span>,{" "}
-            <span className="spanned">Firebase</span>, and modern{" "}
-            <span className="spanned">CSS</span>.
+            I love building web apps that combine functionality with great UX.
+            Currently learning at <span className="spanned">Masai School</span>.
           </p>
           <ul className="highlights">
             <li>

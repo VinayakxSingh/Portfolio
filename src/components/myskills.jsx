@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "../styles/skills.css";
 import {
   FaPython,
@@ -18,9 +18,9 @@ import {
 import { MdApi, MdSecurity } from "react-icons/md";
 import { FiLayout } from "react-icons/fi";
 
-const MySkills = () => {
+const MySkills = forwardRef((props, ref) => {
   return (
-    <section className="skills" id="skills">
+    <section ref={ref} className="skills" id="skills">
       <h2>My Skills</h2>
       <p className="skills-intro">
         Tools and technologies I confidently work with:
@@ -89,6 +89,6 @@ const MySkills = () => {
       </div>
     </section>
   );
-};
+});
 
 export default MySkills;

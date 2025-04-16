@@ -1,8 +1,8 @@
 import "../styles/projects.css";
-
 import { FaGithub } from "react-icons/fa6";
 import React from "react";
-const Projects = React.forwardRef((props, ref) => {
+
+const Projects = () => {
   const projectsData = [
     {
       name: "Todoist",
@@ -46,7 +46,7 @@ const Projects = React.forwardRef((props, ref) => {
   ];
 
   return (
-    <section ref={ref} className="projects" id="projects">
+    <section className="projects" id="projects">
       <h2>Projects</h2>
       <div className="project-list">
         {projectsData.map((project, index) => (
@@ -68,7 +68,7 @@ const Projects = React.forwardRef((props, ref) => {
                   href={project.liveDemoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ position: "relative", right: "30px", top: "20px" }}
+                  className="live-demo-link"
                 >
                   View Live Demo
                 </a>
@@ -79,6 +79,6 @@ const Projects = React.forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+};
 
 export default Projects;
