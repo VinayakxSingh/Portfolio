@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../src/styles/global.css";
 import Hero from "./components/hero";
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import Projects from "./components/projects";
 import Education from "./components/Education";
 import Footer from "./components/footer";
@@ -57,15 +57,6 @@ function App() {
   return (
     <AnimatePresence>
       <div className="app-container">
-        <Navbar
-          activeSection={activeSection}
-          scrollToEducation={() =>
-            educationRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToProjects={() =>
-            projectsRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-        />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
