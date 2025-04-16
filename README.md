@@ -1,52 +1,75 @@
-# Vinayak Singh's Portfolio
+Vinayak Singh's Portfolio
+Welcome to the portfolio of Vinayak Singh, a passionate MERN Stack Developer dedicated to crafting meaningful digital experiences. This portfolio showcases my skills, projects, and professional journey.
 
-Welcome to the portfolio of **Vinayak Singh**, a passionate MERN Stack Developer dedicated to crafting meaningful digital experiences. This portfolio showcases Vinayak's skills, projects, and professional journey.
+🚀 About Me
+Hi, I'm Vinayak Singh — a full-stack web developer with a knack for building web applications that combine functionality with a great user experience. Currently enhancing my skills at Masai School and working on exciting projects using React, Firebase, and modern CSS. I love bringing ideas to life through clean code and thoughtful design.
 
----
-
-## 🚀 About Me
-
-Hi, I'm Vinayak Singh — a full-stack web developer with a knack for building web applications that combine functionality with great user experience. Currently enhancing my skills at Masai School and working on exciting projects using React, Firebase, and modern CSS.
-
----
-
-## 💼 Projects
-
+💼 Projects
 Explore some of my notable projects:
-Todoist:
 
-GitHub: https://github.com/VinayakxSingh/Todoist
+Todoist
+GitHub: Todoist Repo
 
-Live Demo: https://bright-cendol-1e0307.netlify.app/
+Live Demo: Todoist App
 
-Cruising350:
+A task manager app that allows users to manage and organize their to-do lists seamlessly. Built with React, Firebase for authentication, and CSS for responsive design.
 
-GitHub: https://github.com/VinayakxSingh/Cruising350
+Cruising350
+GitHub: Cruising350 Repo
 
-Live Demo: https://cruising350.netlify.app/
+Live Demo: Cruising350
 
-HIX Cosmetics:
+A platform for Royal Enfield enthusiasts to explore motorbike journeys. Built using React, with the design focusing on vibrant, engaging visuals and interactive maps.
 
-GitHub: https://github.com/VinayakxSingh/HIX
+HIX Cosmetics
+GitHub: HIX Repo
 
-Live Demo: https://hix-cosmetics.netlify.app/
+Live Demo: HIX Cosmetics
 
-NeighbourGov:
+An e-commerce platform for a cosmetics brand, featuring product browsing, filtering, and a modern, responsive design. Implemented with React and Firebase for backend support.
 
-GitHub: https://github.com/VinayakxSingh/NeighbourGov
+NeighbourGov
+GitHub: NeighbourGov Repo
 
-Live Demo: https://neighbour-gov.vercel.app/
+Live Demo: NeighbourGov
 
-MovieHub:
+A civic engagement platform for users to submit and track neighborhood issues. Built with React, Firebase Realtime Database, and CSS for sleek UI.
 
-GitHub: https://github.com/VinayakxSingh/MOVIEHUB
+MovieHub
+GitHub: MovieHub Repo
 
-Live Demo: https://moviehub-delta-seven.vercel.app/
-Each project includes links to the GitHub repository and live demos.
+Live Demo: MovieHub App
 
----
+A movie discovery platform where users can search for movies, create watchlists, and view detailed movie information. Developed using React, OMDb API, and CSS for a dynamic experience.
 
-## 🛠 Skills
+🛠 Skills
+Frontend:
 
-- **Frontend**: React, JavaScript, HTML5, CSS3, Responsive Design
-- **Backend**: Node.js, Express.js, MongoDB
+React (hooks, context API, state management)
+
+JavaScript (ES6+)
+
+HTML5, CSS3, Responsive Design (media queries, Flexbox, Grid)
+
+Tailwind CSS, SASS
+
+Backend:
+
+Node.js, Express.js
+
+MongoDB, Firebase (Authentication, Firestore, Realtime Database)
+
+Version Control & Collaboration:
+
+Git, GitHub
+
+Tools:
+
+Vercel, Netlify, Heroku (deployment platforms)
+
+Figma, Adobe XD (UI/UX design)
+
+📬 Contact
+Feel free to reach out via Email or through the Contact section on my portfolio!
+
+Designed and created by Vinayak Singh 👨‍💻
