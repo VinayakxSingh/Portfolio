@@ -1,75 +1,90 @@
-Vinayak Singh's Portfolio
-Welcome to the portfolio of Vinayak Singh, a passionate MERN Stack Developer dedicated to crafting meaningful digital experiences. This portfolio showcases my skills, projects, and professional journey.
+# **Vinayak Singh's Portfolio**
 
-🚀 About Me
-Hi, I'm Vinayak Singh — a full-stack web developer with a knack for building web applications that combine functionality with a great user experience. Currently enhancing my skills at Masai School and working on exciting projects using React, Firebase, and modern CSS. I love bringing ideas to life through clean code and thoughtful design.
+Welcome to the portfolio of **Vinayak Singh**, a passionate **MERN Stack Developer** dedicated to crafting meaningful digital experiences. This portfolio showcases my skills, projects, and professional journey.
 
-💼 Projects
+---
+
+## 🚀 **About Me**
+
+Hi, I'm **Vinayak Singh** — a full-stack web developer with a knack for building web applications that combine functionality with a great user experience. Currently enhancing my skills at **Masai School** and working on exciting projects using **React**, **Firebase**, and modern CSS. I love bringing ideas to life through clean code and thoughtful design.
+
+---
+
+## 💼 **Projects**
+
 Explore some of my notable projects:
 
-Todoist
-GitHub: Todoist Repo
+### **Todoist**
 
-Live Demo: Todoist App
+- **GitHub**: [Todoist Repo](https://github.com/VinayakxSingh/Todoist)
+- **Live Demo**: [Todoist App](https://bright-cendol-1e0307.netlify.app/)
 
-A task manager app that allows users to manage and organize their to-do lists seamlessly. Built with React, Firebase for authentication, and CSS for responsive design.
+A task manager app that allows users to manage and organize their to-do lists seamlessly. Built with **React**, **Firebase** for authentication, and **CSS** for responsive design.
 
-Cruising350
-GitHub: Cruising350 Repo
+---
 
-Live Demo: Cruising350
+### **Cruising350**
 
-A platform for Royal Enfield enthusiasts to explore motorbike journeys. Built using React, with the design focusing on vibrant, engaging visuals and interactive maps.
+- **GitHub**: [Cruising350 Repo](https://github.com/VinayakxSingh/Cruising350)
+- **Live Demo**: [Cruising350](https://cruising350.netlify.app/)
 
-HIX Cosmetics
-GitHub: HIX Repo
+A platform for Royal Enfield enthusiasts to explore motorbike journeys. Built using **React**, with the design focusing on vibrant, engaging visuals and interactive maps.
 
-Live Demo: HIX Cosmetics
+---
 
-An e-commerce platform for a cosmetics brand, featuring product browsing, filtering, and a modern, responsive design. Implemented with React and Firebase for backend support.
+### **HIX Cosmetics**
 
-NeighbourGov
-GitHub: NeighbourGov Repo
+- **GitHub**: [HIX Repo](https://github.com/VinayakxSingh/HIX)
+- **Live Demo**: [HIX Cosmetics](https://hix-cosmetics.netlify.app/)
 
-Live Demo: NeighbourGov
+An e-commerce platform for a cosmetics brand, featuring product browsing, filtering, and a modern, responsive design. Implemented with **React** and **Firebase** for backend support.
 
-A civic engagement platform for users to submit and track neighborhood issues. Built with React, Firebase Realtime Database, and CSS for sleek UI.
+---
 
-MovieHub
-GitHub: MovieHub Repo
+### **NeighbourGov**
 
-Live Demo: MovieHub App
+- **GitHub**: [NeighbourGov Repo](https://github.com/VinayakxSingh/NeighbourGov)
+- **Live Demo**: [NeighbourGov](https://neighbour-gov.vercel.app/)
 
-A movie discovery platform where users can search for movies, create watchlists, and view detailed movie information. Developed using React, OMDb API, and CSS for a dynamic experience.
+A civic engagement platform for users to submit and track neighborhood issues. Built with **React**, **Firebase Realtime Database**, and **CSS** for sleek UI.
 
-🛠 Skills
-Frontend:
+---
 
-React (hooks, context API, state management)
+### **MovieHub**
 
-JavaScript (ES6+)
+- **GitHub**: [MovieHub Repo](https://github.com/VinayakxSingh/MOVIEHUB)
+- **Live Demo**: [MovieHub App](https://moviehub-delta-seven.vercel.app/)
 
-HTML5, CSS3, Responsive Design (media queries, Flexbox, Grid)
+A movie discovery platform where users can search for movies, create watchlists, and view detailed movie information. Developed using **React**, **OMDb API**, and **CSS** for a dynamic experience.
 
-Tailwind CSS, SASS
+---
 
-Backend:
+## 🛠 **Skills**
 
-Node.js, Express.js
+- **Frontend**:
+  - **React** (hooks, context API, state management)
+  - **JavaScript** (ES6+)
+  - **HTML5**, **CSS3**, **Responsive Design** (media queries, Flexbox, Grid)
+  - **Tailwind CSS**, **SASS**
+- **Backend**:
 
-MongoDB, Firebase (Authentication, Firestore, Realtime Database)
+  - **Node.js**, **Express.js**
+  - **MongoDB**, **Firebase** (Authentication, Firestore, Realtime Database)
 
-Version Control & Collaboration:
+- **Version Control & Collaboration**:
 
-Git, GitHub
+  - **Git**, **GitHub**
 
-Tools:
+- **Tools**:
+  - **Vercel**, **Netlify**, **Heroku** (deployment platforms)
+  - **Figma**, **Adobe XD** (UI/UX design)
 
-Vercel, Netlify, Heroku (deployment platforms)
+---
 
-Figma, Adobe XD (UI/UX design)
+## 📬 **Contact**
 
-📬 Contact
-Feel free to reach out via Email or through the Contact section on my portfolio!
+Feel free to reach out via [Email](mailto:vinayaksinghforyou@gmail.com) or through the **Contact** section on my portfolio!
 
-Designed and created by Vinayak Singh 👨‍💻
+---
+
+**Designed and created by Vinayak Singh** 👨‍💻
