@@ -49,7 +49,7 @@ const Education = React.forwardRef((props, ref) => {
             <p>{edu.year}</p>
             <ul>
               {edu.achievements.map((item, i) => (
-                <li key={i}>• {item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
