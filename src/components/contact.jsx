@@ -1,12 +1,12 @@
 import React, { forwardRef, useState } from "react";
 import "../styles/contact.css";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
-  FaPhone,
 } from "react-icons/fa";
 
 const Contact = forwardRef((props, ref) => {
@@ -32,8 +32,6 @@ const Contact = forwardRef((props, ref) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real application, you would send this data to a server or email service
-    // For now, we'll just simulate a successful submission
 
     // Validation check
     if (!formData.name || !formData.email || !formData.message) {
@@ -45,18 +43,39 @@ const Contact = forwardRef((props, ref) => {
       return;
     }
 
-    // Simulate sending (would be an API call in a real app)
-    setFormStatus({
-      submitted: true,
-      success: true,
-      message: "Thanks for your message! I'll get back to you soon.",
-    });
+    // Send email using EmailJS
+    emailjs.send(
+      'service_qtkc29s', // Your EmailJS service ID
+      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      '42oxAFwjI1Xp4-W66' // Your EmailJS public key
+    )
+    .then((result) => {
+      console.log('Email sent successfully!', result.text);
+      setFormStatus({
+        submitted: true,
+        success: true,
+        message: "Thanks for your message! I'll get back to you soon.",
+      });
 
-    // Reset form after successful submission
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
+      // Reset form after successful submission
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    })
+    .catch((error) => {
+      console.error('Error sending email:', error);
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message: "Oops! Something went wrong. Please try again later.",
+      });
     });
   };
 

@@ -15,40 +15,61 @@ const Projects = forwardRef((props, ref) => {
       imageSrc: "/todoist.png",
     },
     {
-      name: "Cruising350",
-      description:
-        "Instagram-inspired platform dedicated to Royal Enfield Classic 350 riders. Features photo sharing, rider stories, and community engagement.",
-      technologies: ["React", "Firebase", "CSS"],
-      githubLink: "https://github.com/VinayakxSingh/Cruising350",
-      liveDemoLink: "https://cruising350.netlify.app/",
-      imageSrc: "/cruising.png",
-    },
-    {
-      name: "HIX Cosmetics",
-      description:
-        "A sleek e-commerce platform for cosmetic products with animations and effects. Includes product filtering, cart functionality, and wishlist features.",
-      technologies: ["React", "CSS", "Framer Motion"],
-      githubLink: "https://github.com/VinayakxSingh/HIX",
-      liveDemoLink: "https://hix-cosmetics.netlify.app/",
-      imageSrc: "/hix.png",
-    },
-    {
       name: "NeighbourGov",
       description:
-        "A civic engagement portal to submit and vote on local issues. Built to create transparency between citizens and local governments.",
-      technologies: ["React", "Firebase", "Node.js"],
+        "A React and Firebase platform for community engagement, enabling real-time discussion of local issues with secure authentication.",
+      technologies: ["React", "Firebase", "Framer-Motion"],
       githubLink: "https://github.com/VinayakxSingh/NeighbourGov",
       liveDemoLink: "https://neighbour-gov.vercel.app/",
       imageSrc: "/ng.png",
     },
     {
+      name: "Investment Tracker",
+      description:
+        "Track and visualize investment portfolios with real-time data. Built with React and Chart.js for clear financial insights.",
+      technologies: [
+        "React",
+        "Chart.js",
+        "CSS",
+        "Framer-Motion",
+        "Firebase-Authentication",
+      ],
+      githubLink: "https://github.com/VinayakxSingh/investment-tracker",
+      liveDemoLink: "https://investment-tracker-one.vercel.app/",
+      imageSrc: "/portvio.png",
+    },
+    {
+      name: "Social-Sect Real Estate",
+      description:
+        "A high-converting lead generation platform for real estate professionals. This React-based landing page helps agents attract quality leads with smooth animations and a clean, responsive design.",
+      technologies: [
+        "React",
+        "Framer-Motion",
+        "React-Icons",
+        "Tailwind-CSS",
+        "Lenis",
+      ],
+      githubLink: "https://github.com/VinayakxSingh/Real-estate-landing-page",
+      liveDemoLink: "https://real-estate-landing-page-navy.vercel.app/",
+      imageSrc: "/socialsect.png",
+    },
+    {
       name: "MovieHub",
       description:
-        "Movie discovery app using OMDb API, allowing users to search for movies, create watchlists, and view detailed information about films.",
-      technologies: ["React", "OMDb API", "CSS"],
+        "A film discovery app powered by the OMDb API, offering detailed movie information and watchlist features. Built with React and Context API for a seamless browsing experience.",
+      technologies: ["React", "OMDb API", "CSS", "Context-API"],
       githubLink: "https://github.com/VinayakxSingh/MOVIEHUB",
       liveDemoLink: "https://moviehub-delta-seven.vercel.app/",
       imageSrc: "/movies.png",
+    },
+    {
+      name: "HIX Cosmetics",
+      description:
+        "An elegant e-commerce platform for beauty products, featuring a responsive React interface with smooth animations. Includes product filtering, detailed views, and shopping cart functionality. The clean design ensures a seamless shopping experience across all devices.",
+      technologies: ["React", "CSS", "Framer Motion"],
+      githubLink: "https://github.com/VinayakxSingh/HIX",
+      liveDemoLink: "https://hix-psi.vercel.app/",
+      imageSrc: "/hix.png",
     },
   ];
 
