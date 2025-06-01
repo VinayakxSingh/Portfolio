@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import "../styles/contact.css";
 import { motion } from "framer-motion";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import {
   FaEnvelope,
   FaGithub,
@@ -44,39 +44,40 @@ const Contact = forwardRef((props, ref) => {
     }
 
     // Send email using EmailJS
-    emailjs.send(
-      'service_qtkc29s', // Your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-      {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-      },
-      '42oxAFwjI1Xp4-W66' // Your EmailJS public key
-    )
-    .then((result) => {
-      console.log('Email sent successfully!', result.text);
-      setFormStatus({
-        submitted: true,
-        success: true,
-        message: "Thanks for your message! I'll get back to you soon.",
-      });
+    emailjs
+      .send(
+        "service_rchjiqk", // Your EmailJS service ID
+        "template_ziqdo6b", // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "42oxAFwjI1Xp4-W66" // Your EmailJS public key
+      )
+      .then((result) => {
+        console.log("Email sent successfully!", result.text);
+        setFormStatus({
+          submitted: true,
+          success: true,
+          message: "Thanks for your message! I'll get back to you soon.",
+        });
 
-      // Reset form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
+        // Reset form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        setFormStatus({
+          submitted: true,
+          success: false,
+          message: "Oops! Something went wrong. Please try again later.",
+        });
       });
-    })
-    .catch((error) => {
-      console.error('Error sending email:', error);
-      setFormStatus({
-        submitted: true,
-        success: false,
-        message: "Oops! Something went wrong. Please try again later.",
-      });
-    });
   };
 
   return (
