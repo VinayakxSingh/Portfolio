@@ -125,7 +125,7 @@ const Hero = () => {
 
           <div className="social-links">
             <motion.a
-              href="https://github.com/VinayakxSingh"
+              href="https://github.com/VinayakxSingh21"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -5, color: "#00ff99" }}
